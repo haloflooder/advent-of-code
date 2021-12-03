@@ -1,6 +1,6 @@
 # Day 2 - Python
 
 **Status**
-Completed part 1 of day 2
+Completed both parts of day 2 and got 2 gold stars
 
-It's python, easy to use so had no problems here.
+It's python, easy to use so had no problems here. Kinda messy but eh? Quick 5-10 minute code to get the job done
