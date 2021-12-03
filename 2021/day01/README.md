@@ -39,3 +39,16 @@ In for loops, use `setlocal EnableDelayedExpansion`. After that, don't use %'s l
 
 ## Escape brackets
 Syntax for batch is very forgiving. Not necessarily a good thing imo. I had a problem when printing ) with the echo command. Just escape it with `^` like `^)`. Otherwise it will complain that it was expecting a bracket at some place or wasn't expecting a bracket or something.
+
+## Functions
+So I guess I learned how to use "functions" in batch. Well, a VERY janky way to do it.
+
+You're just using labels as functions which is really jank. You can technically pass arguments to functions by using `call :someFunction %var1% %var2% etc` **BUT** this doesn't work if you use variables that is an array. In this case, you just have to access the variable like normal. Because I'm already accessing variables without passing them as arguments. I just didn't bother using arguments at all. Yuck.
+
+## Arrays
+So, arrays are really stupid in batch. Since you can't get the length of an array, you have to loop through the array and add 1 to a variable for each pass in the loop.
+
+# CONCLUSION
+Batch was just awful... Which was to be expected. I mean, it's fine when you do simpler things but to actually use it as a full on scripting thing. Why would you want to do this to yourself?
+
+When you'd expect things to work one way. It just doesn't works because of another issue. Sometimes, things don't parse properly at all such as `echo !data[!d1!]! !data[!d2!]! !data[!d3!]!`. It doesn't give you the value of the array and it just prints `d1 d2 d3` for some reason.
