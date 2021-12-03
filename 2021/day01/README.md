@@ -15,26 +15,28 @@ Problem with for loops is that it's technically one command. So even thought it'
 TL;DR;
 In for loops, use `setlocal EnableDelayedExpansion`. After that, don't use %'s like `%someVariable%` in for loops. Use `!someVariable!` instead to process variables in realtime during execution.
 <details>
-    <summary>Example Code</summary>
-    ```batch
-    @echo off
-    echo This is borked
+<summary>Example Code</summary>
 
-    set counter=0
-    for /l %%i in (1,1,10) do (
-        set /a counter=%counter%+1
-        echo Counter: %counter%
-    )
+```batch
+@echo off
+echo This is borked
 
-    echo Now it should work
-    setlocal EnableDelayedExpansion
+set counter=0
+for /l %%i in (1,1,10) do (
+    set /a counter=%counter%+1
+    echo Counter: %counter%
+)
 
-    set counter=0
-    for /l %%i in (1,1,10) do (
-        set /a counter=!counter!+1
-        echo Counter: !counter!
-    )
-    ```
+echo Now it should work
+setlocal EnableDelayedExpansion
+
+set counter=0
+for /l %%i in (1,1,10) do (
+    set /a counter=!counter!+1
+    echo Counter: !counter!
+)
+```
+    
 </details>
 
 ## Escape brackets
