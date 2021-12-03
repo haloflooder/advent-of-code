@@ -1,7 +1,7 @@
 import os
 
 rel_path = os.path.dirname(__file__)
-file_input = open(relPath + "\input.txt", "r")
+file_input = open(rel_path + "\input.txt", "r")
 input_raw = file_input.read()
 file_input.close()
 command_list = input_raw.split("\n")
