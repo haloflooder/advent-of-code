@@ -1,7 +1,7 @@
 # Day 1 - Batch
 
 **Status**
-Completed and earned a star
+Completed and earned two stars for part 1 and 2
 ![One Whole Gold Star](https://i.imgur.com/lgqZASO.png)
 
 Boy oh boy, I forgot how annoying batch is. There are a lot of stupid little rules and issues that you have to work around. But the problem is, you don't even know what you're doing wrong until you read some documentation or solution online to get around an issue. I'm going to list some issues I've ran into while writing the batch script.
