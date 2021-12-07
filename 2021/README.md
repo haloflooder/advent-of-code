@@ -8,5 +8,7 @@ For 2021, going to attempt to use a different language everyday.
 
 ## Days
 Day 1 - Batch
+
 Day 2 - Python
+
 Day 3 - html + javascript
